@@ -7,11 +7,14 @@ print(winning_number)
 
 num_guesses = 5
 user_won = False
-while num_guesses != 0 user_won = false:
-guess = int(input("enter you guess: ")):
-if user_guess == winning_number:
-    print("hey you won")
-    user_won = True
-
- else:
-     print("nope, you lost")   
+while num_guesses != 0 and user_won == False:
+    guess = int(input("enter you guess: "))
+    if guess == winning_number:
+        print("hey you won")
+        user_won = True
+    else:
+        num_guesses -= 1
+        if (num_guesses != 0):
+            print("try again")
+        else:
+            print("nope, you lost!")   
