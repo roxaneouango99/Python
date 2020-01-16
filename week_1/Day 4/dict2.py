@@ -1,4 +1,4 @@
-
+def roll_dice():
 def monte_carlos_with_list(N, dice_max=6):
     result = []
 
